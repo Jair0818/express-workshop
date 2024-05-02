@@ -8,12 +8,14 @@ const user=require('./routes/user');
 const auth=require('./middleware/auth');
 const notFoud=require('./middleware/notFoud');
 const index=require('./middleware/index');
+const cors=require('./middleware/cors');
 /*Verbos HTTP
 GET es lo que ejecuta los navegadores 
 POST es cuando queremos guardar o publicar algo 
 PATCH es la utilizacion de un dato por especifico 
 PUT modificar todos los elementos
 DELETE elimitar un recurso*/
+app.use(cors);
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
