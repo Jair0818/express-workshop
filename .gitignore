@@ -138,5 +138,3 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-# Ignore UI
-Pokedex/
